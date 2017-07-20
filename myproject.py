@@ -7,8 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    time.sleep(0.01) # 模拟程序阻塞
-    return 'hello world!'
+    return 'This is a test page in Docker image test2'
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
